@@ -1,0 +1,40 @@
+
+
+.cards-container {
+    display: grid;
+    align-content: center;
+    height: 20em;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+
+    .mano {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+.card {
+    justify-self: center;
+    width: 10rem;
+    height: 15rem;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &.basto {
+        background-color: #26963e;
+    }
+    &.espada {
+        background-color: #2c71d8;
+    }
+    &.oro {
+        background-color: #ecc92b;
+    }
+    &.copa {
+        background-color: #c42b2b;
+    }
+    &.comodin {
+        background-color: #722696;
+    }
+}
